@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right bottom, #000, #9198e5);
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.aquario {
+  position: absolute;
+
+  left: 36%;
+
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+
+  background: #2e2e2e;
+}
+
+.orient {
+  position: relative;
+
+  left: 2.5%;
+  top: 44%;
+
+  width: 333px;
+  height: 29px;
+
+  border-radius: 50%;
+
+  background: #78d1e1;
+}
+
+.water {
+  position: relative;
+
+  left: 2.5%;
+  bottom: -11%;
+
+  width: 333px;
+  height: 175px;
+
+  background: linear-gradient(to bottom, #78d1e1, #4169E1);
+
+  border-bottom-left-radius: 999px;
+  border-bottom-right-radius: 999px;
+
+}
+
+.fish {
+  position: relative;
+  z-index: 1;
+
+  right: -22%;
+  top: 19%;
+}
+
+.sea-horse {
+  position: relative;
+  z-index: 1;
+
+  height: 88px;
+
+  right: -5%;
+  top: 50%;
+
+  animation: horse infinite 15s;
+}
+
+@keyframes horse {
+  0% {
+    right: -5%;
+    top: 50%;
+  }
+  50% {
+    right: 50%;
+    top: 50%;
+  }
+  
+  /*51% {
+    transform: rotateY(180deg);
+  }*/
+
+  100% {
+    right: -5%;
+    top: 50%;
+  }
+}
